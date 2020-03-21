@@ -1,12 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Navbar } from 'react-bootstrap';
+import queronaText from './queronaText.svg';
+import queronaLogo from './queronaLogo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand href="#home">
+          <img src={queronaLogo} className="d-inline-block" id="logo"/>
+          <img src={queronaText} className="d-inline-block" id="text"/>
+        </Navbar.Brand>
+      </Navbar>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={queronaLogo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
