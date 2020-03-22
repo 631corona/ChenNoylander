@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(40, 44, 52) !important;
+}
+
 .App {
   text-align: center;
 }
@@ -50,4 +54,9 @@
 .navbar-brand #text {
   margin-right: 10px;
   width: 150px;
+}
+
+#demonstrations img{
+  width: 300px;
+  height: 300px;
 }
