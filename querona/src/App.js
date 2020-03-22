@@ -18,11 +18,11 @@ function App() {
             </Navbar>
             <Container>
                 <Row id="demonstrations">
-                    <Col xs={6} md={4}>
-                        <Image src={purimImg} roundedCircle />
+                    <Col xs={6}>
+                        <Image src={purimImg} roundedCircle/>
                     </Col>
-                    <Col xs={6} md={4}>
-                        <Image src={checkImg} roundedCircle />
+                    <Col xs={6}>
+                        <Image src={checkImg} roundedCircle/>
                     </Col>
                 </Row>
             </Container>
