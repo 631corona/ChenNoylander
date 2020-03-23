@@ -16,6 +16,7 @@ function App() {
                     <img src={queronaText} className="d-inline-block" id="text" alt="querona"/>
                 </Navbar.Brand>
             </Navbar>
+            <h1>ענבר מזרחי השליטע נלחמת בקורונה</h1>
             <Container>
                 <Row id="demonstrations">
                     <Col xs={6}>
