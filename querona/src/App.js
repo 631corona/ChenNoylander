@@ -1,4 +1,5 @@
 import React from 'react';
+import MouseRain from './confetti.js';
 import {Navbar, Container, Row, Col, Image} from 'react-bootstrap';
 import queronaText from './queronaText.svg';
 import queronaLogo from './queronaLogo.svg';
@@ -10,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
     return (
         <div className="App">
+            <MouseRain/>
             <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="#home">
                     <img src={queronaLogo} className="d-inline-block" id="logo" alt="logo"/>
