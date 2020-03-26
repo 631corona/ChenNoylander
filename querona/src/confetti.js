@@ -17,6 +17,7 @@ export default () => {
     };
     return (
         <SizedConfetti
+            height={document.body.scrollHeight}
             colors={[
                 "#2EFF6E",
                 "#7bffa3",
