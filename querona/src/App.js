@@ -1,6 +1,8 @@
 import React from 'react';
 import MouseRain from './confetti.js';
 import {Navbar, Container, Row, Col, Image} from 'react-bootstrap';
+import MapChart from "./MapChart.js";
+import ReactTooltip from "react-tooltip";
 import queronaText from './queronaText.svg';
 import queronaLogo from './queronaLogo.svg';
 import purimImg from './purim.jfif';
@@ -9,6 +11,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+    const [mapContent, mapSetContent] = React.useState("");
     return (
         <div className="App">
             <MouseRain/>
@@ -28,6 +31,10 @@ function App() {
                         <Image src={checkImg} roundedCircle/>
                     </Col>
                 </Row>
+            </Container>
+            <Container id="mapContainer">
+                <MapChart setTooltipContent={mapSetContent} />
+                <ReactTooltip>{mapContent}</ReactTooltip>
             </Container>
             <header className="App-header">
                 <img src={queronaLogo} className="App-logo" alt="logo"/>

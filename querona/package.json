@@ -11,7 +11,9 @@
     "react-bootstrap": "^1.0.0-beta.17",
     "react-confetti": "^5.0.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "react-simple-maps": "^1.0.0-beta.0",
+    "react-tooltip": "^4.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,6 +37,8 @@
     ]
   },
   "devDependencies": {
+    "d3-fetch": "^1.1.2",
+    "d3-scale": "^3.2.1",
     "react-use": "^13.27.0"
   }
 }
