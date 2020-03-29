@@ -1,6 +1,6 @@
 import React from 'react';
 import MouseRain from './confetti.js';
-import {Navbar, Container, Row, Col, Image} from 'react-bootstrap';
+import {Navbar, Container, Row, Col, Image, Card} from 'react-bootstrap';
 import MapChart from "./MapChart.js";
 import ReactTooltip from "react-tooltip";
 import queronaText from './queronaText.svg';
@@ -23,6 +23,17 @@ function App() {
             </Navbar>
             <h1>ענבר מזרחי השליטע נלחמת בקורונה</h1>
             <Container>
+                <Card bg="dark" border="dark">
+                    <Card.Header>בחרו מדינה לקבלת סטטיסטיקות עליה:</Card.Header>
+                    <Card.Body>
+                        <Container id="mapContainer">
+                            <MapChart setTooltipContent={mapSetContent} />
+                            <ReactTooltip>{mapContent}</ReactTooltip>
+                        </Container>
+                    </Card.Body>
+                </Card>
+            </Container>
+            <Container>
                 <Row id="demonstrations">
                     <Col xs={6}>
                         <Image src={purimImg} roundedCircle/>
@@ -32,13 +43,9 @@ function App() {
                     </Col>
                 </Row>
             </Container>
-            <Container id="mapContainer">
-                <MapChart setTooltipContent={mapSetContent} />
-                <ReactTooltip>{mapContent}</ReactTooltip>
-            </Container>
-            <header className="App-header">
+            {/*<header className="App-header">
                 <img src={queronaLogo} className="App-logo" alt="logo"/>
-            </header>
+            </header>*/}
         </div>
     );
 }

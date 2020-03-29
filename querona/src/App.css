@@ -72,6 +72,12 @@ h1 {
   color: #2EFF6E;
 }
 
+.card-header {
+  font-size: larger;
+  color: white;
+  direction: rtl;
+}
+
 @font-face {
   font-family: Rubik;
   src: url(./fonts/rubik/Rubik-Regular.ttf) format('truetype'),
