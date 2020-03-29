@@ -1,4 +1,5 @@
 import React, { memo } from "react";
+import MapChartContent from "./MapChartContent";
 import {
     ZoomableGroup,
     ComposableMap,
@@ -6,8 +7,7 @@ import {
     Geography
 } from "react-simple-maps";
 
-const geoUrl =
-    "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+const geoUrl = MapChartContent;
 
 const rounded = num => {
     if (num > 1000000000) {
