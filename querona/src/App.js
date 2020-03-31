@@ -60,9 +60,6 @@ function App() {
                     </Col>
                 </Row>
             </Container>
-            {/*<header className="App-header">
-                <img src={queronaLogo} className="App-logo" alt="logo"/>
-            </header>*/}
         </div>
     );
 }
